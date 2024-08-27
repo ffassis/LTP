@@ -1,3 +1,71 @@
+//verifica se um número é par ou ímpar
+#include <stdio.h>
+#include <locale.h>
+
+int main(){
+    setlocale(LC_ALL, "portuguese");
+    int n;
+    printf("Digite um número: ");
+    scanf("%d", &n);
+
+    if(n%2 == 0)
+        printf("Número Par!");
+    else
+        printf("Número Ímpar!");
+
+return 0;
+}
+
+//outro exemplo
+#include <stdio.h>
+#include <locale.h>
+
+int main(){
+    setlocale(LC_ALL, "portuguese");
+    int n, div, resto;
+    float divF;
+
+    printf("Digite um número: ");
+    scanf("%d", &n);
+
+    div = n/2; //recebe o resultado da divisão
+    resto = n%2; // recebe o resto da divisão
+    divF = n/2.0;
+
+    printf("Divisão = %d", div);
+    printf("\nResto = %d", resto);
+    printf("\nDivisão Real = %.1f", divF);
+
+    if(n%2 == 0)
+        printf("\nNúmero Par!");
+    else
+        printf("\nNúmero ímpar!");
+
+return 0;
+}
+
+
+//Verifica se dois números são iguais, ou caso contrário qual é o maior
+#include <stdio.h>
+#include <locale.h>
+
+int main(){
+    setlocale(LC_ALL, "portuguese");
+    int n1, n2;
+    printf("Digite dois números: ");
+    scanf("%d %d", &n, &n);
+
+    if(n1 == n2)
+        printf("Os números são iguais!");
+    else if(n1 > n2)
+        printf("O número 1 é o maior!");
+    else
+        printf("O número 2 é o maior!");
+
+return 0;
+}
+
+
 //Verifica se dois números são iguais, ou caso contrário qual é o maior
 #include <stdio.h>
 #include <locale.h>
@@ -16,5 +84,31 @@ int main(){
         printf("O número %d é o maior que %d!", n2, n1);
 
 return 0;
+}
+
+/*******************************************/
+#include <stdio.h>
+#include <locale.h>
+int main(){
+    setlocale(LC_ALL, "portuguese");
+    float salario_hora, horas_trabalhadas, salario_total;
+
+    printf("Digite o salário por hora: ");
+    scanf("%f", &salario_hora);
+
+    printf("Digite o número de horas trabalhadas: ");
+    scanf("%f", &horas_trabalhadas);
+
+    if(horas_trabalhadas > 40){
+        salario_total = (salario_hora * 40) + ((horas_trabalhadas - 40)*salario_hora*1,5);
+        printf("Salário total com horas extras: %.2f\n", salario_total);
+    }
+    else{
+        salario_total = salario_hora * horas_trabalhadas;
+        printf("Salário total: %.2f\n", salario_total);
+
+    }
+
+    return 0;
 }
 
