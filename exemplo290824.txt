@@ -1,0 +1,66 @@
+#include <stdio.h>
+#include <locale.h>
+int main(){
+    setlocale(LC_ALL, "portuguese");
+    int n1, n2;
+
+    printf("Digite dois números: ");
+    scanf("%d %d", &n1, &n2);
+
+    if(n1 == n2){
+        n1--;
+        printf("Números iguais");
+        printf(" - N1 = %d, N2 = %d", n1, n2);
+    }
+    else if(n1 > n2){
+        n1++;
+        printf("N1 maior");
+        printf(" - N1 = %d, N2 = %d", n1, n2);
+    }
+    else {
+        n2++;
+        printf("N2 maior");
+        printf(" - N1 = %d, N2 = %d", n1, n2);
+    }
+    //printf(" - N1 = %d, N2 = %d", n1, n2);
+    return 0;
+}
+
+
+/*********/
+#include <stdio.h>
+#include <locale.h>
+int main(){
+    setlocale(LC_ALL, "portuguese");
+    int n1, n2, n3, n4, n5, soma=0;
+
+    printf("Digite dois números: ");
+    scanf("%d %d %d %d %d", &n1, &n2, &n3, &n4, &n5);
+    
+    //soma = n1+n2+n3+n4+n5;
+    
+    printf("Soma = %d", n1+n2+n3+n4+n5);
+    //printf("Soma = %d", soma);
+    return 0;
+}
+
+
+/********/
+
+#include <stdio.h>
+#include <locale.h>
+int main(){
+    setlocale(LC_ALL, "portuguese");
+    int i=1, n, soma=0;
+
+    while(i <= 20){
+        printf("Digite o %dº número: ", i);
+        scanf("%d", &n);
+        soma = soma + n;
+
+        i++;
+    }
+
+    printf("Soma = %d", soma);
+    return 0;
+}

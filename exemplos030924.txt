@@ -1,0 +1,229 @@
+// 1.1 Faça um programa que leia um número inteiro e o imprima
+#include <stdio.h>
+
+int main() {
+    int numero; 
+    
+    printf("Digite um número: ");
+    scanf("%d", &numero);
+
+    printf("O número digitado foi: %d", numero);
+    return 0;
+}
+
+//***********
+
+// 1.2 Faça um programa que leia um número real e o imprima
+#include <stdio.h>
+
+int main() {
+    float numero; 
+    
+    printf("Digite um número: ");
+    scanf("%f", &numero);
+
+    printf("O número digitado foi: %.1f", numero);
+    return 0;
+}
+
+//************
+
+// 1.3 Peça ao usuário para digitar 3 números inteiros
+//imprima a soma
+#include <stdio.h>
+
+int main() {
+    int n1, n2, n3, soma; 
+    
+    printf("Digite o 1º número: ");
+    scanf("%d", &n1);
+    
+    printf("Digite o 2º número: ");
+    scanf("%d", &n2);
+    
+    printf("Digite o 3º número: ");
+    scanf("%d", &n3);
+    
+    soma = n1+n2+n3;
+    
+    printf("A soma = %d", soma);
+    return 0;
+}
+
+//*********
+// 1.3 Peça ao usuário para digitar 3 números inteiros
+//imprima a soma
+#include <stdio.h>
+
+int main() {
+    int n1, n2, n3, soma; 
+    
+    printf("Digite três números: ");
+    scanf("%d %d %d", &n1, &n2, &n3);
+    
+    soma = n1+n2+n3;
+    
+    printf("A soma = %d", soma);
+    return 0;
+}
+
+//********
+// 1.4 Leia um número real e imprima o resultado do quadrado
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    float n1, quadrado; 
+    
+    printf("Digite um número real (pode ter vírgula): ");
+    scanf("%f", &n1);
+    
+    quadrado = pow(n1, 3);
+    
+    printf("O valor ao quadrado = %.2f", quadrado);
+    return 0;
+}
+
+//******
+// 1.4 Leia um número real e imprima o resultado do quadrado
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    float n1, quadrado; 
+    
+    printf("Digite um número real (pode ter vírgula): ");
+    scanf("%f", &n1);
+    
+    quadrado = pow(n1, 3);
+    
+    printf("O valor ao quadrado = %.2f", quadrado);
+    return 0;
+}
+
+//******
+// 1.4 Leia um número real e imprima o resultado do quadrado
+#include <stdio.h>
+
+int main() {
+    float n1, quadrado; 
+    
+    printf("Digite um número real (pode ter vírgula): ");
+    scanf("%f", &n1);
+    
+    quadrado = n1*n1;
+    
+    printf("O valor ao quadrado = %.2f", quadrado);
+    return 0;
+}
+
+//*******
+// 1.4 Leia um número real e imprima o resultado do quadrado
+#include <stdio.h>
+
+int main() {
+    float n1, quadrado; 
+    
+    printf("Digite um número real (pode ter vírgula): ");
+    scanf("%f", &n1);
+    
+    quadrado = n1*n1;
+    
+    printf("O valor ao quadrado = %.2f", quadrado);
+    return 0;
+}
+
+//*********
+//3 verifiC'C#o de senha
+#include <stdio.h>
+
+int main() {
+	int n, senhaCadastrada = 123456;
+	char nomeCliente[50], enderecoCliente[50];
+	int cnpj, telefone;
+
+	printf("----------------------------\n");
+	printf("Tela de acesso ao sistema:\n");
+	printf("----------------------------\n");
+
+	printf("Digite sua senha: ");
+	scanf("%d", &n);
+
+	printf("\n----------------------------\n");
+	printf("Tela de cadastro de clinte:\n");
+	printf("----------------------------\n");
+
+	printf("Digite o Nome do Cliente: ");
+	gets(nomeCliente);
+	printf("Digite o EndereC'o do Cliente: ");
+	gets(enderecoCliente);
+	printf("Digite os nC:meros do CNPJ do Cliente: ");
+	scanf("%d", &cnpj);
+	printf("Digite os nC:meros do Telefone do Cliente: ");
+	scanf("%d", &telefone);
+
+	if(n == senhaCadastrada) {
+		printf("Senha esta correta, acesso Permitido!\n");
+		printf("---------------------------\n");
+		printf("Dados cadastrados do cliente\n");
+		printf("Nome cliente: %s\n", nomeCliente);
+		printf("Endereço Cliente: %s\n", enderecoCliente);
+		printf("CNPJ do cliente: %d\n", cnpj);
+		printf("Telefone do cliente: %d\n", telefone);
+
+	}
+	else {
+		printf("Senha incorreta, acesso Negado!");
+	}
+	
+	return 0;
+}
+
+//*******
+//3 verifiC'C#o de senha
+#include <stdio.h>
+
+int main() {
+	int n, senhaCadastrada = 123456;
+	char nomeCliente[50], enderecoCliente[50];
+	int cnpj, telefone;
+
+	printf("----------------------------\n");
+	printf("Tela de acesso ao sistema:\n");
+	printf("----------------------------\n");
+
+	printf("Digite sua senha: ");
+	scanf("%d", &n);
+
+	if(n == senhaCadastrada) {
+		printf("Senha esta correta, acesso Permitido!\n");
+		printf("---------------------------\n");
+		printf("\n----------------------------\n");
+	    printf("Tela de cadastro de clinte:\n");
+	    printf("----------------------------\n");
+
+    	printf("Digite o Nome do Cliente: ");
+    	scanf("%s", nomeCliente);
+    	
+    	printf("Digite o Endereço do Cliente: ");
+    	scanf("%s", enderecoCliente);
+    	
+    	printf("Digite os números do CNPJ do Cliente: ");
+    	scanf("%d", &cnpj);
+    	
+    	printf("Digite os números do Telefone do Cliente: ");
+    	scanf("%d", &telefone);
+    	
+		printf("\nDados cadastrados do cliente\n");
+		printf("Nome cliente: %s\n", nomeCliente);
+		printf("Endereço Cliente: %s\n", enderecoCliente);
+		printf("CNPJ do cliente: %d\n", cnpj);
+		printf("Telefone do cliente: %d\n", telefone);
+
+	}
+	else {
+		printf("Senha incorreta, acesso Negado!");
+	}
+	
+	return 0;
+}
