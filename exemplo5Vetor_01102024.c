@@ -2,7 +2,7 @@
 #include <locale.h>
 int main(){
     setlocale(LC_ALL, "portuguese");
-    int tamanho=7, i;
+    int tamanho=4, i;
 
     float saldoSemanal[tamanho], saldoTotalSemana=0.0;
 
