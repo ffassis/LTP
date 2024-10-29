@@ -1,12 +1,18 @@
 #include <stdio.h>
-//armazenar e imprimir os valores 0 1 2 3 4
+#include <math.h>
+//armazenar e imprimir o valor de i ao cubo
 
 int main(){
-    int i;
+    int tamanho = 10;
+    int i, vetor[tamanho];
 
-    for(i=0; i<10; i++){
-        if(i%2 == 0)
-            printf("%d ", i);
+    for(i=0; i<tamanho; i++){
+        vetor[i] = pow(i, 3);
+        //vetor[i] = i*i*i;
+    }
+    //imprimindo o vetor
+    for(i=0; i<tamanho; i++){
+        printf("%d\n", vetor[i]);
     }
 
     return 0;
