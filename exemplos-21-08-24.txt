@@ -1,0 +1,60 @@
+//exemplos de aula
+#include <stdio.h>
+
+int main() {
+    printf("Hello World!");
+
+    return 0;
+}
+
+//************************
+
+#include <stdio.h>
+
+int main() {
+    int n1=0, x=0, y;
+    n1=20; y= 2;
+    
+    printf("x=%d, y=%d, n1=%d\n", x, y, n1);
+    y = 10;
+    x = n1 * y; 
+    
+    printf("x = %d * %d = %d", n1, y, x);
+    return 0;
+}
+
+//**************************
+
+#include <stdio.h>
+
+int main() {
+    int n1=0, x=0, y;
+    printf("Digite o valor de n1 e de y: ");
+    scanf("%d", &n1); //scanf("%d %d", &n1, &y);   
+    scanf("%d", &y);
+    x = n1 * y; 
+    
+    printf("x = %d * %d = %d", n1, y, x);
+    return 0;
+}
+
+
+
+#include <stdio.h>
+
+int main() {
+    int i=2, x=0, y=0;
+    if(y == x)
+        printf("teste\n");
+        
+    x = ++i; //i = i + 1
+    
+    y = i++;
+    
+    printf("x = %d, y = %d", x, y);
+    printf("\ni= %d", i);
+    return 0;
+}
+
+
+

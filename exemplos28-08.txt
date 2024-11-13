@@ -1,0 +1,106 @@
+#include <stdio.h>
+
+int main() {
+    int x=0, y=0;
+    
+    printf("Digite o valor de X e de Y: ");
+    scanf("%d %d", &x, &y);
+    
+    if(x == y){
+        printf("Valores iguais!"); 
+    }
+    else if(x > y)
+        printf("X é o maior!");
+    else
+        printf("Y é o maior!");
+
+    return 0;
+}
+
+/****************************/
+
+#include <stdio.h>
+
+int main() {
+    int nota1=0, nota2=0, nota3=0;
+    float media=0.0;
+    
+    printf("Digite três notas: ");
+    scanf("%d %d %d", &nota1, &nota2, &nota3);
+    
+    media = (nota1+nota2+nota3)/3.0;
+    
+    printf("Média do aluno %.2f.\n", media);
+    
+    if(media >= 6){
+        printf("Aprovado!"); 
+    }
+    else
+        printf("Reprovado!");
+
+    return 0;
+}
+/**********************************
+
+#include <stdio.h>
+
+int main() {
+    int numero=0, n;
+    float media=0.0;
+    
+    printf("Digite um valor: ");
+    scanf("%d", &numero);
+    
+    if(numero % 2 == 0){
+        printf("par!"); 
+    }
+    else
+        printf("ímpar!");
+        
+    n = numero / 2;
+    printf("\nn = %d", n);
+
+    return 0;
+}
+
+/************************/
+#include <stdio.h>
+
+int main() {
+    int numero=0;
+    
+    printf("Digite um valor: ");
+    scanf("%d", &numero);
+    
+    if(numero == 0){
+        printf("Número igual a Zero!"); 
+    }
+    else if(numero > 0)
+        printf("Número Maior que Zero!");
+    else
+        printf("Número Menor que Zero!");
+     
+    return 0;
+}
+
+/******************/
+#include <stdio.h>
+#include <locale.h>
+
+int main() {
+    setlocale(LC_ALL, "portuguese");
+    float salario=0;
+    
+    printf("Digite o valor do salário: ");
+    scanf("%f", &salario);
+    
+    if(salario < 1000)
+        salario = salario * 1.1; 
+
+    else
+        salario = salario * 1.05;
+        
+    printf("Novo Salário R$ %.2f", salario);
+      
+    return 0;
+}
